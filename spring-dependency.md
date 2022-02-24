@@ -16,4 +16,15 @@ In this article, we will use constructor based injection for demonstration.
 [Demonstrating Dependency injection]()
 
 # Initializing Spring using Spring Initializr
-Go to and select the following parameters https://start.spring.io/  or use [this link](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=2.6.3&packaging=jar&jvmVersion=17&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&dependencies=web)
+Go to https://start.spring.io/ and select the parameters in the following snippet or use [this link](https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.6.3&packaging=jar&jvmVersion=17&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot%20Dep%20Injection&packageName=com.example.dependency&dependencies=web) for the populated fields.
+
+`project:maven
+spring boot: 2.6.3
+package name: com.example.dependency
+packaging: jar
+java: 17
+dependencies: Spring Web
+`
+
+Generate (CTRL + ENTER) the project files and unzip the folder then open the `/demo/` folder using an IDE of your choice.
+
