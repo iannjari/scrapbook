@@ -1,7 +1,7 @@
-# API Design using Spring Beans Dependency injection
+# API Design using Spring Dependency injection
 
 Dependency injection in Spring utilizes Beans (objects that are instantiated at boot time) and concept known as Autowiring. It is known as Autowirng beacause the Spring Framework 
-does this process automatically.
+does this process automatically. Dependency injection helps in seperation of the back-end's functions so that it has an API layer, Service layer, and a Data Access layer by decoupling (or loose coupling) the various components. The objects(beans) thus have to be injected at boot time.
 
 In this article, we will use constructor based injection for demonstration. The example class will be a `student` class with the following properties:
 - Id `id`,
@@ -30,8 +30,8 @@ packaging: jar
 java: 17
 dependencies: Spring Web
 `
-
 Generate (CTRL + ENTER) the project files and unzip the folder then open the `/demo/` folder using an IDE of your choice.
+
 
 
 Create a Java Package/Folder called `student` inside the `//` folder to contain the  demonstration Student class.
@@ -59,10 +59,9 @@ Inside this class , by pasting the code in the following cell:
 ```java
 ```
 # Illustration of the Dependency process
-In our example, 
+In our example, the `` object is instantiated  and injected `StudentController` when the controller is booted.
 
 # References
-
-
+[Dependency Injection In Spring](https://www.educba.com/dependency-injection-in-spring/)
 
 
